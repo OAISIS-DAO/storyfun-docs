@@ -1,0 +1,110 @@
+---
+title: "2. What is ai(3,3)?"
+description: "Description of your new file."
+---
+
+## Limitations of ve(3,3)
+
+In the modern DeFi ecosystem, the ve(3,3) mechanism introduced by Andre Cronje was an innovative approach to align the incentives of all participants (liquidity providers, traders, token holders). However, ve(3,3) has several important limitations:
+
+- **Forced Token Locking**: Users had to lock their tokens for long periods, mostly 4 years, to access incentives fairly.
+- **Lack of Exit Mechanisms**: Once tokens were locked, there was no way to exit until the lock period ended.
+- **Unfair Concentration of Voting Power**: Voting power tended to be concentrated among large protocols and institutions that could lock large amounts.
+- **Accumulation of "Dead" Voting Power**: As time passed, "dead" voting power accumulated from users who were not actively participating, reducing system efficiency.
+
+To overcome these limitations, [Story.fun](http://Story.fun) introduced ai(3,3), a more flexible and intelligent incentive model.
+
+## Structure of ai(3,3): OS, iOS, aiOS
+
+The ai(3,3) mechanism is built around three token types and their relationships:
+
+### OS
+
+OS is the native token of the OAISIS ecosystem and the protocol token of [Story.fun](http://Story.fun). Key features:
+
+- Tradable liquidity token
+- Used for all transactions in the launchpad
+- Can be converted to iOS and aiOS
+
+### iOS
+
+iOS (intelligent OS) is a non-transferable token that can be received by bonding OS. Key features:
+
+- Non-transferable token, cannot be directly traded
+- When staked, provides voting rights in the protocol and receives fees and voting incentives
+- Can be unbonded (a.k.a. Exit) at any time (subject to penalties or vesting period)
+
+### aiOS
+
+aiOS (autonomous intelligent OS) is an automated version of iOS, managed by the DeFAI Agent Ossy. Key features:
+
+- Includes all iOS functions
+- Automated voting and reward claiming
+- Intelligent voting strategies for optimized yields
+- Selects optimal pools without human intervention
+
+## Key Features
+
+### Staking & Voting
+
+### iOS Staking
+
+iOS staking is a core element of the ai(3,3) system:
+
+- **Staking Process**: OS token holders can bond OS to iOS at a 1:1 ratio at any time. iOS can be staked at any time.
+- **Voting Power**: Voting power is assigned proportionally to the amount of iOS staked.
+- **Reward Eligibility**: Only staked iOS can receive protocol fees, voting incentives, and rebase rewards.
+- **Active Participation Required**: Unlike ve(3,3), active participation and voting is required every epoch to receive rewards.
+
+### aiOS Automated Voting & Reward Collection
+
+aiOS simplifies the user experience and automates ideal voting and reward collection:
+
+- **Automated Voting**: Ossy automatically votes for optimal pools through data analysis
+- **Automated Reward Claims**: Automatically claims all rewards after epoch transitions
+- **Compound Effect**: All rewards are reinvested to increase the aiOS ratio
+- **Time Saving**: Users don't need to waste time on complex voting strategies or reward claiming processes
+
+### Epoch Structure and Reward Distribution
+
+The ai(3,3) system operates based on weekly epochs:
+
+- **Epoch Length**: Each epoch is 7 days (starting Thursday 00:00 UTC)
+- **Voting Period**: During each epoch, iOS stakers vote for their preferred liquidity pools
+- **Emission Distribution**: Based on voting ratios, the OS emission for the next epoch is distributed to the voted LP pools as iOS.
+- **Reward Claims**: After epoch transition, fees and voting incentives from the previous epoch can be claimed
+- **Dynamic Emission**: Epoch emission can be adjusted by up to ±25% based on protocol revenue
+
+### Exit Mechanisms
+
+### Instant Withdrawal vs. Linear Withdrawal
+
+iOS holders have two exit options:
+
+- **Instant Withdrawal**:
+  - iOS can be instantly converted to OS at any time
+  - 50% penalty applies (1 iOS = 0.5 OS)
+- **Linear Withdrawal (Vesting)**:
+  - 6-month linear vesting option available
+  - Penalty decreases according to vesting period (maximum 6 months = no penalty)
+  - Can be canceled during the first 14 days after vesting starts
+  - iOS in vesting cannot vote and does not receive rebase rewards
+
+### Withdrawal Penalties and Distribution Method
+
+Withdrawal penalties are distributed to remaining participants in the system:
+
+- **Penalty Size**: 50% for instant withdrawal, larger penalty for shorter vesting periods
+- **Distribution Mechanism**: Forfeited OS tokens are distributed proportionally to staked iOS holders based on their share
+- **Streaming Method**: Penalties are evenly streamed and distributed during the next epoch
+
+### Rebase & Redistribution
+
+### PVP Rebase Mechanism Explanation
+
+ai(3,3) provides dilution protection and long-term participation incentives through a mechanism called "PVP (Player vs Player) Rebase":
+
+- **Dilution Protection**: Stakers are protected from dilution through early exit penalties from other users
+- **Natural Value Concentration**: Ownership naturally concentrates among users who value it most over time
+- **Incentive Alignment**: The structure rewards longer stays with more rewards, promoting long-term participation
+- **Balanced Play**: Penalties from early exiters become additional revenue for remaining participants
